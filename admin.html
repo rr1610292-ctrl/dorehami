@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="fa" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#11100e"><title>پنل مدیریت | دورهمی</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head>
+<body><div class="ambient"></div><header class="top"><a class="brand" href="index.html">سایت دورهمی‌های خودمونی<span>✦</span></a><a class="admin-link" href="index.html">نمایش سایت</a></header>
+<main class="admin-main">
+<section class="card login-card" id="login-panel"><div class="section-kicker">PRIVATE ACCESS</div><h2>ورود مدیر</h2><p class="muted">برای مدیریت اطلاعات دورهمی و مهمان‌ها وارد شوید.</p><form id="login-form"><label>ایمیل مدیر</label><input id="email" type="email" required placeholder="ایمیل مدیر"><label>رمز عبور</label><input id="password" type="password" required placeholder="رمز عبور"><button class="gold-button">ورود به پنل</button><p class="form-note" id="login-message" role="status"></p></form></section>
+<section id="dashboard" hidden>
+<div class="dashboard-head"><div><div class="section-kicker">HOST DASHBOARD</div><h1>پنل مدیریت دورهمی</h1></div><button class="outline-button" id="logout">خروج</button></div>
+<section class="card editor-card"><div class="section-kicker">EVENT DETAILS</div><h2>ویرایش اطلاعات دورهمی</h2><p class="muted">هر تغییری ذخیره کنی، در صفحه اصلی برای مهمان‌ها نمایش داده می‌شود.</p>
+<form id="event-form">
+<label for="title">عنوان دورهمی</label><input id="title" maxlength="100" placeholder="مثلاً دورهمی آخر هفته">
+<label for="location">مکان</label><input id="location" maxlength="160" placeholder="آدرس یا نام ویلا">
+<label for="event-date-input">تاریخ و ساعت</label><input id="event-date-input" maxlength="100" placeholder="مثلاً جمعه ۲۱ آذر، ساعت ۱۸">
+<label for="description">توضیحات مهمونی</label><textarea id="description" rows="5" maxlength="1500" placeholder="توضیحات، برنامه‌ها، چیزهایی که مهمان‌ها باید بدانند..."></textarea>
+<label for="cover-file">عکس دورهمی</label><input id="cover-file" type="file" accept="image/png,image/jpeg,image/webp"><small class="help">فرمت‌های JPG، PNG و WEBP؛ حداکثر ۵ مگابایت.</small>
+<div class="preview-wrap" id="preview-wrap" hidden><img id="cover-preview" alt="پیش‌نمایش عکس"><button type="button" class="outline-button" id="remove-cover">حذف عکس فعلی</button></div>
+<button class="gold-button" id="save-event">ذخیره تغییرات <span>✦</span></button><p class="form-note" id="event-message" role="status"></p>
+</form></section>
+<div class="dashboard-head guest-head"><div><div class="section-kicker">GUEST LIST</div><h2>مدیریت مهمان‌ها</h2></div><button class="outline-button" id="export">خروجی CSV</button></div>
+<div class="stats"><article class="stat"><small>مجموع پاسخ‌ها</small><strong id="total">۰</strong></article><article class="stat"><small>میان</small><strong id="yes">۰</strong></article><article class="stat"><small>نمیان</small><strong id="no">۰</strong></article><article class="stat"><small>نامشخص</small><strong id="maybe">۰</strong></article></div>
+<div class="table-wrap"><table><thead><tr><th>نام</th><th>موبایل</th><th>پاسخ</th><th>زمان ثبت</th></tr></thead><tbody id="guest-rows"><tr><td colspan="4">در حال دریافت...</td></tr></tbody></table></div><p class="form-note" id="dashboard-message" role="status"></p>
+</section></main><footer>PRIVATE ADMIN AREA · دورهمی</footer><script type="module" src="admin.js"></script></body></html>

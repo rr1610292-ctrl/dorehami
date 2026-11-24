@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#11100e"><meta name="description" content="سایت دورهمی‌های خودمونی">
+<title>دورهمی‌های خودمونی</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css">
+</head>
+<body><div class="ambient"></div>
+<header class="top"><a class="brand" href="#">سایت دورهمی‌های خودمونی<span>✦</span></a><a class="admin-link" href="admin.html">ورود مدیر</a></header>
+<main class="public-main">
+  <section class="event" id="event-view">
+    <div class="event-cover" id="cover-wrap" hidden><img id="event-cover" alt="تصویر دورهمی"></div>
+    <div class="event-copy">
+      <div class="eyebrow"><i></i> YOU'RE INVITED <i></i></div>
+      <h1 id="event-title">دورهمی دوستانه</h1>
+      <p class="event-description" id="event-description">برای دیدن جزئیات این دورهمی، کمی بعد دوباره سر بزنید.</p>
+      <div class="event-meta">
+        <div><small>مکان</small><strong id="event-location">به‌زودی اعلام می‌شود</strong></div>
+        <div><small>زمان</small><strong id="event-date">به‌زودی اعلام می‌شود</strong></div>
+      </div>
+    </div>
+  </section>
+  <section class="rsvp card">
+    <div class="section-kicker">YOUR PRESENCE MATTERS</div><h2>حضورت رو خبر بده</h2>
+    <p class="muted">فرم زیر رو پر کن تا برای دورهمی برنامه‌ریزی کنیم.</p>
+    <form id="rsvp-form">
+      <label for="guest-name">نام و نام خانوادگی</label><input id="guest-name" name="name" maxlength="70" required placeholder="مثلاً علی رضایی">
+      <label for="guest-phone">شماره موبایل</label><input id="guest-phone" name="phone" inputmode="tel" autocomplete="tel" maxlength="16" required placeholder="09xxxxxxxxx">
+      <fieldset><legend>میای؟</legend>
+        <label class="choice"><input type="radio" name="response" value="yes" checked><span>با عشق میام <b>♥</b></span></label>
+        <label class="choice"><input type="radio" name="response" value="no"><span>متأسفانه نمی‌تونم بیام</span></label>
+        <label class="choice"><input type="radio" name="response" value="maybe"><span>هنوز مشخص نیست</span></label>
+      </fieldset>
+      <button class="gold-button" type="submit" id="submit-btn">ثبت پاسخ <span>✦</span></button><p class="form-note" id="form-message" role="status"></p>
+    </form>
+    <div class="privacy">🔒 پاسخ‌ها خصوصی هستند و فقط مدیر سایت به فهرست مهمان‌ها دسترسی دارد.</div>
+  </section>
+</main>
+<footer>با عشق، برای دورهمی‌های خودمونی <span>✦</span></footer>
+<script type="module" src="app.js"></script></body></html>
